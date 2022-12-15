@@ -10,5 +10,5 @@ input.Close();
 
 int total = Rader.Sum(rad => Convert.ToInt32(rad));
 Console.WriteLine(total);
-int total2 = Rader.Where(rad=>(Convert.ToInt32(rad)%2)==0).Sum();
+int total2 = Rader.Where(rad => (Convert.ToInt32(rad)%2)==0).Sum(s => Convert.ToInt32(s));
 Console.WriteLine(total2);
